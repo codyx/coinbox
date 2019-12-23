@@ -1,0 +1,82 @@
+#marketing-hero {
+    position: relative;
+    top: 12.1%;
+    left: 11.3%;
+    width: 45%;
+    height: 66.9%;
+  }
+
+  .hero-text {
+    margin-top: 51px;
+    font-size: 46px;
+    line-height: 13px;
+    text-align: left;
+    object-fit: contain;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-style: normal;
+  }
+
+  .blue-text {
+    color: #1d81eb;
+  }
+
+  .subhero-text {
+    margin-top: 51px;
+    width: 66.6%;
+    height: 15.2%;
+    object-fit: contain;
+    font-size: 22.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+
+  .get-started-btn {
+    margin-top: 28.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 4px;
+    border-color: #1D81EB;
+    background-color: #1D81EB;
+    cursor: pointer;
+  }
+
+  .get-started-btn:hover {
+    background-color: #1D81EB;
+    box-shadow: 0px 15px 20px rgba(64, 113, 162, 0.4);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  .get-started-btn-txt {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f7f7f8;
+  }
+
+  .partners {
+    display: flex;
+    width: 264px;
+    margin-top: 36px;
+    margin-left: 43.5px;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
