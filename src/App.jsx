@@ -1,10 +1,12 @@
 import React from 'react';
-import Landing from './components/Landing';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './Routes';
 
 const App = () => (
-  <div id="container">
-    <Landing />
-  </div>
+  // Todo: add ErrorBoundary class
+  <Router>
+    <Routes />
+  </Router>
 );
 
 export default App;
