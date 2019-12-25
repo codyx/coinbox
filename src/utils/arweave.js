@@ -6,4 +6,9 @@ const arweave = Arweave.init({
   port: 443,
 });
 
+export const createWalletFromJwk = async (jwk) => ({
+  jwk,
+  address: await arweave.wallets.jwkToAddress(jwk),
+});
+
 export default arweave;
