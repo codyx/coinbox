@@ -51,3 +51,13 @@
     opacity: 0;
     background: none;
 }
+
+#login-back-arrow {
+    position: relative;
+    top: 53.8px;
+    left: 11.3%;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}

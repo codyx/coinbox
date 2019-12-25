@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-1{fill:#3f3d56}
+        </style>
+    </defs>
+    <path id="Icon_ionic-md-arrow-round-back" d="M22.065 13.595H11.119l4.246-4.305a1.873 1.873 0 0 0 0-2.451 1.455 1.455 0 0 0-2.21 0L6.085 14.1a1.7 1.7 0 0 0-.46 1.215v.022a1.7 1.7 0 0 0 .46 1.215l7.064 7.266a1.455 1.455 0 0 0 2.21 0 1.873 1.873 0 0 0 0-2.451l-4.246-4.305H22.06a1.656 1.656 0 0 0 1.565-1.735 1.638 1.638 0 0 0-1.56-1.732z" class="cls-1" data-name="Icon ionic-md-arrow-round-back" transform="translate(-5.625 -6.33)"/>
+</svg>
