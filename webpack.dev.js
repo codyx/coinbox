@@ -8,5 +8,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     hot: true,
+    publicPath: '/',
+    historyApiFallback: true,
   },
 };
