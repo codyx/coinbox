@@ -23,6 +23,7 @@ const Login = () => {
           to unleash the wizard<br />
           inside you.
           </h1>
+          <br />
           <LoginAnimRenderer />
         </div>
         <img alt="" id="hero-img" src={HeroImg} />

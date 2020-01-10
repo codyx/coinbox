@@ -17,6 +17,7 @@ body {
 }
 
 #box {
+  position: relative;
   width: 86.14%;
   height: 69.90%;
   object-fit: contain;
@@ -25,16 +26,16 @@ body {
 }
 
 #hero-img {
-  position: absolute;
+  position: fixed;
   top: 20.0925%;
   right: 3.19%;
-  width: 798.7px;
-  height: 647px;
+  width: 41.6%;
+  height: 59%;
   object-fit: contain;
 }
 
 #github-img {
-  position: absolute;
+  position: fixed;
   left: 50%;
   bottom: 15px;
   width: 32px;
@@ -49,4 +50,9 @@ body {
   align-items: center;
   height: 150px;
   width: 383px;
+}
+
+.table-pagination {
+  position: relative;
+  justify-content: center;
 }

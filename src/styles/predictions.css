@@ -1,0 +1,138 @@
+#coinbox-logo-home {
+    position: absolute;
+    top: 34px;
+    left: 133px;
+    width: 190px;
+    height: 95.3px;
+    object-fit: contain;
+}
+
+#predictions-back-arrow {
+    position: absolute;
+    top: 57px;
+    left: 58.9px;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#coinbox-signout-button {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    width: 118px;
+    height: 32px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#predictions-stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    margin-top: 33px;
+    width: 96.1%;
+    height: 96px;
+    object-fit: contain;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    flex-direction: row;
+}
+
+.predictions-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.stats-element {
+    width: 320px;
+    height: 42px;
+    flex-direction: column;
+}
+
+.stats-label {
+    width: 191px;
+    height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.stats-value {
+    width: 39px;
+    height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #066bf7;
+}
+
+.new-prediction-btn {
+    width: 320px;
+    height: 44px;
+    background-color: #066bf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-prediction-btn-txt {
+    width: 162px;
+    height: 21px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f7f7f8;
+}
+
+#predictions-table-container {
+    position: absolute;
+    left: 2%;
+    width: 96.1%;
+    bottom: 33px;
+    height: 70.5%;
+    object-fit: contain;
+    border-radius: 4px;
+    border: solid 1px #707070;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 2%;
+    width: 96.1%;
+    bottom: 33px;
+    height: 70.5%;
+    object-fit: contain;
+    border-radius: 4px;
+    border: solid 1px #707070;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#loading {
+    position: relative;
+    justify-content: center;
+}
