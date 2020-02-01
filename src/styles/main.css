@@ -42,13 +42,13 @@ body {
   height: 32px;
 }
 
-@media only screen and (max-height: 600px) {
-  #github-img {
-    display: none;
+@media only screen and (max-height: 800px) {
+  #box {
+    height: 84%;
   }
 }
 
-.no-text-decoration {
+.no-text-decoration, .no-text-decoration:hover {
   text-decoration: none;
 }
 

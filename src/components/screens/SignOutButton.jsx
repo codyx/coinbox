@@ -5,7 +5,6 @@ import SignOutButtonImg from '../../../public/assets/sign-out-button.svg';
 const SignOutButton = () => {
   const history = useHistory();
   const signOut = () => {
-    console.log('Signing out...');
     if (window.localStorage && window.localStorage.getItem('wallet')) {
       window.localStorage.removeItem('wallet');
     }

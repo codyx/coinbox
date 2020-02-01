@@ -79,7 +79,7 @@ const PredictionsTable = ({
   paginationInfo: { pageCount, pageIndex, setPageIndex },
 }) => (
   <div id="predictions-table-container">
-    <Table striped bordered hover responsive>
+    <Table striped bordered hover responsive="sm" size="sm">
       <thead>
         <tr>
           <th>Date</th>

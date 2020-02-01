@@ -14,7 +14,7 @@ const LandingMarketing = () => (
       Think outside the <span className="blue-text">box</span>
     </h1>
     <h3 className="subhero-text">
-      Coinbox is made to make you improve your prediction skills on the crypto market.
+      Coinbox is made to make you test your prediction skills on the crypto markets.
     </h3>
     <Link to="/login" className="no-text-decoration">
       <div className="get-started-btn">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Lottie from 'react-lottie';
 
 const GenericAnim = ({
-  onComplete, fileName, height, width,
+  onComplete, fileName, height, width, children,
 }) => {
   const [animationData, setAnimationData] = useState(null);
   const loadAnimationData = async () => {
@@ -39,6 +39,7 @@ const GenericAnim = ({
           )
           : null
       }
+      {children}
     </div>
   );
 };
@@ -47,6 +48,7 @@ GenericAnim.defaultProps = {
   onComplete: () => {},
   height: '100%',
   width: '100%',
+  children: null,
 };
 
 GenericAnim.propTypes = {
@@ -54,6 +56,10 @@ GenericAnim.propTypes = {
   fileName: PropTypes.string.isRequired,
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
 };
 
 export default GenericAnim;

@@ -3,7 +3,7 @@
   top: 12.1%;
   left: 11.3%;
   width: 45%;
-  height: 66.9%;
+  height: 88%;
 }
 
 .hero-text {
@@ -39,7 +39,7 @@
 }
 
 .get-started-btn {
-  margin-top: 28.5px;
+  /* margin-top: 28.5px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,10 +79,4 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-}
-
-@media only screen and (max-height: 800px) {
-  .partners {
-    display: none;
-  }
 }

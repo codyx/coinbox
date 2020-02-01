@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import '../../../styles/landing.css';
 import LandingMarketing from './LandingMarketing';
 import Footer from '../../Footer';
 import HeroImg from '../../../../public/assets/hero1.svg';
 
 const Landing = () => {
-  // const history = useHistory();
+  const history = useHistory();
 
   useEffect(() => {
-    // if (window.localStorage && window.localStorage.getItem('wallet')) {
-    //   window.setTimeout(() => history.push('/predictions'), 1500); // Redirecting returning user.
-    // }
+    if (window.localStorage && window.localStorage.getItem('wallet')) {
+      window.setTimeout(() => history.push('/predictions'), 1500); // Redirecting returning user.
+    }
   }, []);
 
   return (

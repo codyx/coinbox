@@ -3,14 +3,14 @@
     left: 11.3%;
     top: 12.1%;
     width: 33%;
-    height: 73.1%;
+    height: 83.1%;
     max-height: 500px;
 }
 
 .login-hero-text {
     margin-top: 35.7px;
     width: 542px;
-    height: 171px;
+    height: 30%;
     object-fit: contain;
     font-size: 2.4vw;
     font-weight: bold;
@@ -21,6 +21,13 @@
     text-align: left;
     color: #000000;
 }
+
+@media only screen and (min-height: 800px) {
+    .login-hero-text {
+        height: 40%;
+    }
+}
+
 
 #arweave-login-box {
     display: flex;

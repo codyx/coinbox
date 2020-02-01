@@ -20,7 +20,7 @@
 
 #coinbox-signout-button {
     position: absolute;
-    top: 50px;
+    top: 1%;
     right: 15px;
     width: 118px;
     height: 32px;
@@ -131,6 +131,17 @@
     border: solid 1px #707070;
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+@media only screen and (max-height: 800px) {
+    #predictions-table-container {
+        bottom: 15px;
+    }
+
+    #loading-container {
+        bottom: 15px;
+    }
+}
+
 
 #loading {
     position: relative;
