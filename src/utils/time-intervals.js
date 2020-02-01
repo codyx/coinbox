@@ -8,7 +8,7 @@ const charToSeconds = {
 };
 
 export const intervalToSeconds = (delay) => {
-  const regexp = new RegExp(/^[1-9]{1}\d? ?[(m|h|d|w|mo|y)]{1}$/m);
+  const regexp = new RegExp(/^[0-9]{1}\d? ?(m|h|d|w|mo|y){1}$/m);
   if (!delay || !regexp.test(delay)) throw new Error(`Invalid delay: ["${delay}"]`);
   const interval = delay.replace(/\d/g, '');
   const intervalInSec = charToSeconds[interval];

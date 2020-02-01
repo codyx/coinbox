@@ -80,3 +80,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media only screen and (max-height: 800px) {
+  .partners {
+    display: none;
+  }
+}

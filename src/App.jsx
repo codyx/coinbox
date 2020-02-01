@@ -1,5 +1,5 @@
 import React, { useState, Suspense } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import WalletContext from './WalletContext';
 import Routes from './router/Routes';
 import useLocalStorage from './utils/useLocalStorage';

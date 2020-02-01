@@ -7,13 +7,17 @@ import { intervalToSeconds, secondsToInterval } from '../../../utils/time-interv
 
 const percentChange = (a, b) => (((b - a) / a) * 100);
 
-const renderOutcome = (outcome, noLiquidity) => {
-  if (noLiquidity) return 'cancelled (no liquidity)';
+const renderOutcome = (outcome, noLiquidityAtEntry, noLiquidityAtExp) => {
+  if (noLiquidityAtEntry) return '❌ (no liquidity at entry)';
+
+  // noLiquidityAtExp is true if Coinbase doesn't return the candle on which the prediction ends.
+  if (noLiquidityAtExp) return '❌ (no liquidity at expiration)';
   if (!outcome) return '';
   if (outcome === 'success') {
-    return <span role="img" aria-label="thumbs-up" style={{ color: '#26a69a' }}>👍 win</span>;
+    return <span role="img" aria-label="thumbs-up" style={{ color: '#26a69a' }}>👍</span>;
   }
-  return <span role="img" aria-label="thumbs-up" style={{ color: '#ef5350' }}>👎 lose</span>;
+  if (outcome === 'fail') return <span role="img" aria-label="thumbs-up" style={{ color: '#ef5350' }}>👎</span>;
+  return '';
 };
 
 const renderExpirationPrice = (entryPrice, finalPrice) => {
@@ -33,8 +37,8 @@ const renderExpirationPrice = (entryPrice, finalPrice) => {
 
 const renderPrediction = (prediction) => (
   prediction === 'UP'
-    ? <span role="img" aria-label="chart-increasing">📈 increase</span>
-    : <span role="img" aria-label="chart-decreasing">📉 decrease</span>
+    ? <span role="img" aria-label="chart-increasing">📈</span>
+    : <span role="img" aria-label="chart-decreasing">📉</span>
 );
 
 const checkOutcome = (entryPrice, expirationPrice, prediction) => {
@@ -61,11 +65,10 @@ const renderData = (predictions, tickers) => predictions.map((p) => {
       <td><strong>{tickers[p.market]}</strong></td>
       <td>{p.entryPrice === -1 ? 'no liquidity' : p.entryPrice}</td>
       <td>{expirationPrice !== -1
-        ? renderExpirationPrice(p.entryPrice, p.expirationPrice) : ''}
+        ? renderExpirationPrice(p.entryPrice, p.expirationPrice) : 'N/A'}
       </td>
       <td>{renderPrediction(p.prediction)}</td>
-      <td>{expirationPrice !== -1
-        ? renderOutcome(outcome, p.entryPrice === -1) : '' }
+      <td>{renderOutcome(outcome, p.entryPrice === -1, hasExpired && p.expirationPrice === -1)}
       </td>
     </tr>
   );

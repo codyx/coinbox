@@ -28,6 +28,10 @@ export default function usePredictions(wallet) {
     };
 
     const fetchPredictions = async () => {
+      if (!wallet) {
+        console.error('No wallet injected');
+        return;
+      }
       try {
         setPredictions([]);
         const { txs, totalCount: count } = await listPredictions(wallet.address,
@@ -50,13 +54,14 @@ export default function usePredictions(wallet) {
           });
         const p = await Promise.all(pp);
         if (!isCancelled) {
+          console.log('predictions', p);
           setPredictions(p);
           setPageCount(Math.ceil(count / maxPredPerPage));
           setTotalCount(count);
         }
       } catch (err) {
         if (!axios.isCancel(err)) {
-          console.error(err);
+          console.error(`fetchPredictions error: ${err}`);
         }
       }
     };

@@ -4,7 +4,7 @@ import '../../../styles/predictions.css';
 import Spinner from 'react-bootstrap/Spinner';
 import Footer from '../../Footer';
 import CoinboxImg from '../../../../public/assets/coinbox_tr.png';
-import SignOutButton from '../../../../public/assets/sign-out-button.svg';
+import SignOutButton from '../SignOutButton';
 import BackArrow from '../../../../public/assets/ionic-md-arrow-round-back.svg';
 import Stats from './Stats';
 import PredictionsTable from './PredictionsTable';
@@ -22,7 +22,7 @@ const Predictions = () => {
       <Link to="/">
         <img alt="Coinbox home" id="coinbox-logo-home" src={CoinboxImg} />
       </Link>
-      <img alt="Sign out" id="coinbox-signout-button" src={SignOutButton} />
+      <SignOutButton />
       <div id="box" className="predictions-box">
         <Link to="/login" id="predictions-back-arrow">
           <img alt="Go back" src={BackArrow} />

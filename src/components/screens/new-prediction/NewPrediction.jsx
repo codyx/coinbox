@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../../../styles/new-prediction.css';
 import requester from '../../../utils/requester';
 import Footer from '../../Footer';
 import CoinboxImg from '../../../../public/assets/coinbox_tr.png';
-import SignOutButton from '../../../../public/assets/sign-out-button.svg';
+import SignOutButton from '../SignOutButton';
 import NewPredictionContainer from './NewPredictionContainer';
 import { createAndPostTransaction } from '../../../utils/arweave';
 import WalletContext from '../../../WalletContext';
@@ -49,7 +49,7 @@ const NewPrediction = () => {
       <Link to="/">
         <img alt="Coinbox home" id="coinbox-logo-home" src={CoinboxImg} />
       </Link>
-      <img alt="Sign out" id="coinbox-signout-button" src={SignOutButton} />
+      <SignOutButton />
       <div id="box" className="predictions-box">
         {
           isAnimated
