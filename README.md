@@ -29,11 +29,13 @@ You can access the [live demo](https://or6tq2g7ef6f.arweave.net/ZTe6-l85_LAY_x3L
 
 ###### NOTE
 
-1. As predictions live on the blockchain, when you make a new prediction it has to be mined into the blockchain (this process usually takes < 5min). Therefore, **you'll have to wait a little bit before seeing your prediction on the app**.
+1. **If you didn't make any prediction yet, a spinner will appear on the predictions page.**
 
-2. If the app is showing "no liquidity" on a prediction, it either means (a) there was no liquidity for this coin at the moment of entry or expiration or (b) there is no candle available yet (wait a little bit).
+2. As predictions live on the blockchain, when you make a new prediction it has to be mined into the blockchain (this process usually takes < 5min). Therefore, **you'll have to wait a little bit before seeing your prediction on the app**.
 
-3. This app is a simple prototype and not a real-world application, so several improvements are doable (responsive design especially for mobiles devices, cache, tests, etc) and bugs might exist.
+3. If the app is showing "no liquidity" on a prediction, it either means (a) there was no liquidity for this coin at the moment of entry or expiration or (b) there is no candle available yet (wait a little bit).
+
+4. This app is a simple prototype and not a real-world application, so several improvements are doable (responsive design especially for mobiles devices, cache, tests, etc) and bugs might exist.
 
 ---
 See the [Open web hackhaton](https://gitcoin.co/issue/ArweaveTeam/Bounties/1/2929).
