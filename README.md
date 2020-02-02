@@ -14,9 +14,9 @@ You can use this app to test your prediction skills on the change of crypto mark
 
 ## Features
 
-- Login through Arweave
-- Make crypto predictions and store them in the Arweave blockchain
-- See your predictions results
+- Login through Arweave.
+- Make crypto predictions and store them in the Arweave blockchain.
+- See the predictions outcomes.
 
 ### How to use the app
 
@@ -34,3 +34,6 @@ You can access the [live demo](https://or6tq2g7ef6f.arweave.net/ZTe6-l85_LAY_x3L
 2. If the app is showing "no liquidity" on a prediction, it either means (a) there was no liquidity for this coin at the moment of entry or expiration or (b) there is no candle available yet (wait a little bit).
 
 3. This app is a simple prototype and not a real-world application, so several improvements are doable (responsive design especially for mobiles devices, cache, tests, etc) and bugs might exist.
+
+---
+See the [Open web hackhaton](https://gitcoin.co/issue/ArweaveTeam/Bounties/1/2929).
